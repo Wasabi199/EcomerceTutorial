@@ -26,6 +26,7 @@ export default function App() {
             <View style={styles.cardCounterContext}>
               <TouchableOpacity onPress={() => {
                 setCount1(item1 > 0 ? item1 - 1 : item1 - 0);
+                // setCount1(item1 - 1);
               }} style={styles.cardCounterButton}>
                 <Text style={styles.cardCounterButtonText}>-</Text>
               </TouchableOpacity>
@@ -41,7 +42,7 @@ export default function App() {
         </ImageBackground>
 
 
-        <ImageBackground style={styles.backgroundImage} source={require('./assets/coffee/capocino.jpg')}>
+        <ImageBackground style={styles.backgroundImage} source={require('./assets/coffee/coffe1.jpg')}>
           <View style={styles.cards}>
             <View style={styles.cardContext}>
               <Text style={styles.itemTitle}>Caffè mocha</Text>
@@ -68,7 +69,7 @@ export default function App() {
 
         </ImageBackground>
 
-                <ImageBackground style={styles.backgroundImage} source={require('./assets/coffee/capocino.jpg')}>
+                <ImageBackground style={styles.backgroundImage} source={require('./assets/coffee/coffee2.jpg')}>
         <View style={styles.cards}>
           <View style={styles.cardContext}>
             <Text style={styles.itemTitle}>Espresso</Text>
@@ -94,7 +95,7 @@ export default function App() {
         </View>
         </ImageBackground>
 
-                <ImageBackground style={styles.backgroundImage} source={require('./assets/coffee/capocino.jpg')}>
+                <ImageBackground style={styles.backgroundImage} source={require('./assets/coffee/coffee.jpg')}>
         <View style={styles.cards}>
           <View style={styles.cardContext}>
             <Text style={styles.itemTitle}>Regular Coffee</Text>
@@ -176,7 +177,7 @@ const styles = StyleSheet.create({
   },
 
   itemTitle: {
-    color: 'white',
+    color: 'black',
     fontSize: 20
   },
 
@@ -187,7 +188,7 @@ const styles = StyleSheet.create({
   },
 
   cardPriceText: {
-    color: 'white'
+    color: 'black'
   },
 
   cardCounterContext: {
